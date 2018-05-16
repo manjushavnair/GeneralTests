@@ -1,0 +1,12 @@
+// Group test suite reference
+http://howtodoinjava.com/testng/how-to-execute-testng-tests-with-maven-build/
+http://websystique.com/java/testing/testng-mockito-example-stubbing-void-methods/
+http://www.vogella.com/tutorials/Mockito/article.html
+
+To run Test suite
+cd c:\automation
+set classpath=%classpath%;.;c:\automation\testng-6.8.7.jar;c:\automation\selenium-server-standalone-2.53.1.jar;C:\Users\IBM_ADMIN\SaaS\TestingProjects\target\TestingProjects-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+javap 
+java -cp "C:\Users\IBM_ADMIN\SaaS\TestingProjects\target\TestingProjects-0.0.1-SNAPSHOT-jar-with-dependencies.jar;c:\automation\testng-6.8.7.jar;c:\automation\selenium-server-standalone-2.53.1.jar" org.testng.TestNG testing.xml
+
+select date picker dropdown-http://stackoverflow.com/questions/21447152/select-values-in-the-month-drop-down-selenium-webdriver?rq=1
