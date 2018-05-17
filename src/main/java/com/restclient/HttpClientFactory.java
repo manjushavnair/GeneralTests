@@ -23,7 +23,7 @@ public class HttpClientFactory {
             return client;
         }
         SSLContext sslcontext = SSLContexts.custom().useSSL().build();
-        sslcontext.init(null, new X509TrustManager[]{new HttpsTrustManager()}, new SecureRandom());
+        sslcontext.init(null, new X509TrustManager[]{new com.restclient.HttpsTrustManager()}, new SecureRandom());
         SSLConnectionSocketFactory factory = new SSLConnectionSocketFactory(sslcontext,
                 SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
         client = HttpClients.custom().setSSLSocketFactory(factory).build();

@@ -27,8 +27,8 @@ public class TestGet {
     }
 
     public void readExcelData() {
-        String baseurl =null;
-        String posts =null;
+        String baseurl = null;
+        String posts = null;
         try {
 
             eu = new ExcelUtil();
@@ -40,8 +40,8 @@ public class TestGet {
 
             logger.info(baseurl);
 
-            HttpClient client = HttpClientFactory.getHttpsClient();
-            HttpGet request = new HttpGet(baseurl+posts);
+            HttpClient client = com.restclient.HttpClientFactory.getHttpsClient();
+            HttpGet request = new HttpGet(baseurl + posts);
             HttpResponse response = client.execute(request);
             BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
             String line = "";
@@ -52,7 +52,7 @@ public class TestGet {
 
         } catch (Exception e) {
             e.printStackTrace();
-            Assert.fail("Unable to access "+baseurl);
+            Assert.fail("Unable to access " + baseurl);
 
 
         }
@@ -60,8 +60,8 @@ public class TestGet {
     }
 
     public void testBase() {
-        String baseurl =null;
-        String posts =null;
+        String baseurl = null;
+        String posts = null;
         try {
 
             eu = new ExcelUtil();
@@ -73,8 +73,8 @@ public class TestGet {
 
             logger.info(baseurl);
 
-            HttpClient client = HttpClientFactory.getHttpsClient();
-            HttpGet request = new HttpGet(baseurl+posts);
+            HttpClient client = com.restclient.HttpClientFactory.getHttpsClient();
+            HttpGet request = new HttpGet(baseurl + posts);
             HttpResponse response = client.execute(request);
             BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
             String line = "";
@@ -85,7 +85,7 @@ public class TestGet {
 
         } catch (Exception e) {
             e.printStackTrace();
-            Assert.fail("Unable to access "+baseurl);
+            Assert.fail("Unable to access " + baseurl);
 
 
         }

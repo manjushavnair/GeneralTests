@@ -1,4 +1,4 @@
-package  com.restclient;
+package com.restclient;
 
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.CertificateException;
