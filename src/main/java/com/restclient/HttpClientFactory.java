@@ -3,16 +3,14 @@
 package com.restclient;
 
 
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.X509TrustManager;
-
 import org.apache.http.client.HttpClient;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.SSLContexts;
-
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.X509TrustManager;
 import java.security.SecureRandom;
 
 public class HttpClientFactory {

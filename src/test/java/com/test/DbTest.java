@@ -8,8 +8,6 @@ import org.junit.Test;
 
 import java.util.Map;
 
-import static org.mockito.Mockito.*;
-
 public class DbTest {
     Db n;
     Map<String, ?> params;
